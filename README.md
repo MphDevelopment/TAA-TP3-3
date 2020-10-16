@@ -5,7 +5,9 @@ L'architecture du projet est similaire à celle des tp1 et tp2 pour la majeure p
 l'ajout d'un package Web permettant de définir les points d'accès web à l'API a été ajouté.
 
 ### Exécution du projet
-1. Pour ce projet comme pour les projets 1 et 2 il faut exécuter la base de données hsqldb
+1. Pour ce projet comme pour les projets 1 et 2 il faut exécuter la base de données hsqldb. Il faut supprimer les données la base de données
+existantes, spring nomme d'une autre manière les colonnes que les tp1 et tp2 et ne peut donc pas réutiliser la base de données existante.
+Je n'ai pas trouvé comment résoudre ce conflit..
 2. Puis exécuter la classe java SampleDataJpaApplication.java
 
 ### Utilisation
@@ -17,4 +19,5 @@ Ce projet couvre lui aussi uniquement l'api pour la classe métier Employee ses 
 - http://localhost:8080/employee/list qui permet de lister tous les employés du système
 - http://localhost:8080/employee/{id}/ qui permet de retrouver un employee par son identifiants
 - http://localhost:8080/employee/{id}/tasks et http://localhost:8080/employee/{id}/projects qui permettent
-respectivement de retrouver les tâches et les projets dans lequel l'employé d'identifiant {id} participe
+respectivement de retrouver les tâches et les projets dans lequel l'employé d'identifiant {id} participe. Cependant
+je n'ai pas mis en place d'accès aux API de ces éléments donc les employés n'en ont généralement pas..
