@@ -101,7 +101,7 @@ public class EmployeeController {
 	{
 		return "<html>\n" + 
 				"	<body>\n" + 
-				"		<FORM Method=\"POST\" Action=\"/createEmployee\">\n" + 
+				"		<FORM Method=\"POST\" Action=\"/employee/create\">\n" + 
 				"			Firstname : 		<INPUT type=\"text\" size=\"20\" name=\"firstName\"><BR>\n" + 
 				"			Lastname : 	<INPUT type=\"text\" size=\"20\" name=\"lastName\"><BR>\n" + 
 				"			<INPUT type=submit value=Send>\n" + 
